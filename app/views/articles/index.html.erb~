@@ -1,0 +1,22 @@
+<h2>Recent Job Ads</h2>
+
+  <div>
+    <% @articles.each do |article| %><br>
+      <div>
+        <div class="a-title"><%= article.title %></div>
+        <div class="a-post"><%= sanitize (article.post.truncate_words(40)), tags: %w(a img), attributes: %w() %>          <div class="a-edit-2"> 
+            <i>Posted:</i> <b><%= article.postdate %></b> | <i>By:</i> <b><%= article.user.username %></b>
+            <% if current_user && article.user == current_user %> |
+                <%= link_to 'Edit', edit_article_path(article) %> | 
+                <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+            <div><%= link_to 'Read More', article, class: "readmore" %></div>
+         </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+<% if current_user %> 
+<%= link_to 'New Scholarship', new_article_path, class: "link-to-btn" %>
+<% end %>

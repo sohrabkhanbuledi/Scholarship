@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title><%= @title %> :: Scholarships ::</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'nicEdit' -%>
+  <%= csrf_meta_tags %>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="jquery.textarea_autosize.min.js"></script>
+	
+</head>
+<body>
+<div id="wrapper"><!-- #wrapper -->
+
+	<%= render 'shared/topnav' %>
+	
+	<%= render 'shared/header' %>
+	
+	<section id="main"><!-- #main content and sidebar area -->
+			<section id="content"><!-- #content -->
+	<div id="notice"><%= notice %></div>		
+
+
+
+<%= yield %>
+						
+			</section><!-- end of #content -->
+
+		<%= render 'shared/sidebar' %>		
+
+	</section><!-- end of #main content and sidebar-->
+	
+	<%= render 'shared/footer' %>	
+	
+</div><!-- #wrapper -->
+</body>
+</html>

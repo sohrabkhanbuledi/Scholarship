@@ -1,0 +1,28 @@
+<aside id="sidebar"><!-- sidebar -->
+				
+			
+	<% if user_signed_in? %>
+		<%= render 'shared/login_bar'%>
+	<% end %>
+
+
+
+	<h3>Category</h3>
+		<ul>
+			<% Category.all.each do |category| %>
+        	<li><%= link_to category.name, category %></li>
+        	<% end %>
+		</ul>
+					
+	<h3>Sponsors</h3>
+
+			<%= image_tag("ad180.png") %><br /><br />
+
+	<h3>Connect With Us</h3>
+					
+			<%= link_to "Facebook", ('https://www.facebook.com/'), class: "fb-btn2" %>
+		<!--	<%= link_to "Twitter", ('https://twitter.com/?lang=en'), class: "tw-btn2" %>
+			<%= link_to "Google Plus", ('https://plus.google.com/u/0/108681172820250920941/posts'), class: "gp-btn2" %>-->
+					
+
+</aside><!-- end of sidebar -->

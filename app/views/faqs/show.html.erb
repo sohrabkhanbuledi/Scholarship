@@ -1,0 +1,14 @@
+<h2>
+  <%= @faq.title %>
+</h2>
+
+<div class="show-updated">Updated at: <strong><%= @faq.faq_update %></strong></div>
+<hr>
+<div class="show-body">
+  <%= @faq.body %>
+</div>
+<div class="show-share">Share with:</div>
+<hr>
+<div><%= commontator_thread(@faq) %></div>
+
+<br><br><br>

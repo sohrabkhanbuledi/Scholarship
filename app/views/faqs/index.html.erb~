@@ -1,0 +1,21 @@
+<h2>FAQ's</h2>
+
+    <% @faqs.each do |faq| %>
+      <div style="margin-top:2px;">
+        <div  class="expander active"><%= faq.title %>
+          <div class="updated">Updated @ <%= faq.faq_update %></div>
+        </div>
+        <div class="text"><%= faq.body %>
+        <hr> 
+        <div class="replies">View the replies on this question 
+        <%= link_to "Reply", faq %>
+        <%= link_to "Edit", edit_faq_path(faq) %>
+        <%= link_to "Delete", faq, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+        </div>
+       <div>	    
+    <% end %>
+    <br>
+    <%= link_to 'New FAQ', new_faq_path %>
+    
+    

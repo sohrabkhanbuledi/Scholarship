@@ -1,0 +1,13 @@
+<div class="login-sys">
+
+		<% if user_signed_in? %>
+			<div class="logger">
+				<div class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></div> 
+				<div class="login-name"><%= current_user.username %></div> 
+			</div>
+			<div class="edit-profile"><%= link_to 'Edit Profile',edit_user_registration_path %></div>
+			<div class="logout"><%= link_to "Logout", destroy_user_session_path, :method => :delete %></div>
+
+		<% end %>
+
+</div>

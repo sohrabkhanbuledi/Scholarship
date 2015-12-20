@@ -1,0 +1,19 @@
+<h2>About Me</h2>
+
+<div style="width: 0 auto; height: 0 auto;">
+	<!--<div style="float:left; padding-right: 10px;"><%= image_tag("DSC_0077_001.jpg", size: "140x120", class: "DSC_0077_001") %></div>
+	<div style="padding-right: 7px;">
+	<div id="about">-->
+	<p> 
+	a platform where students can find latest National and International Scholarships opportunities. We are here for your better career counselling. Every user can help us in regards to provide authentic data and new scholarships. feel free to contact us at anytime, we will glad to here from you. stay connected.
+	</p>
+	</div>
+	</div>
+
+</div>
+
+<!--<p style="margin-bottom:-15px;"><b>Follow me by:</b></p>
+		<%= link_to "facebook", ('https://www.facebook.com/pakjobposting'), class: "fb-btn" %>
+		<%= link_to "twitter",  ('https://twitter.com/?lang=en'), class: "tw-btn" %>
+		<%= link_to "google plus", ('https://plus.google.com/u/0/108681172820250920941/posts'), class: "gp-btn" %>-->
+

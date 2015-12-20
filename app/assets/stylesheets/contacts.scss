@@ -1,0 +1,82 @@
+// Place all the styles related to the Contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+hr {
+background-color: #c3c3c3;
+border: 0;
+height: 1px;
+clear: both;
+}
+
+.contact-warper {
+  background: #E0ECF8;
+  float: left;
+  margin-top: 5px;
+  border: 1px solid #c3c3c3;
+}
+
+.contact-sub {
+  font-weight: bold;
+  font-size: 18px;
+  width: auto;
+  padding-left: 5px;
+  border: 1px solid #c3c3c3;
+  line-height: 30px;
+  background: #0088b3;
+  color: white
+}
+
+.contact-name {
+  font-weight: bold;
+  font-size: 13px;
+  width: auto;
+  padding: 10px 0px 0px 7px;
+
+}
+
+.contact-email {
+  font-size: 11px;
+  font-style: italic;
+  color: gray;
+  margin-top: -22px;
+  padding: 0px 0px 0px 7px;
+}
+
+.contact-question {
+  color: black;
+  font-size: 12px;
+  float: left;
+  padding: 10px 10px 10px 10px; 
+}
+
+.contact-destroy {
+  background-color: white;
+  width: 70px;
+  text-align: center;
+  margin-left: 89%;
+  line-height: 20px;
+  margin-top: -20px;
+  color: white;
+}
+
+.link-to-btn-cont {
+  padding: 5px;
+  margin: 0px 0px 10px 10px; 
+  width: 100px; 
+  text-align: center;
+  background-color: white; 
+  border: 1px solid gray;
+  float:left; 
+  border-radius: 3px; 
+  transition-duration: 0.4s;
+  transition-property: background-color, color, box-shadow;
+}
+
+.link-to-btn-cont:hover {
+  background-color: #0088b3;
+  border: 1px solid white;
+  box-shadow: 0px 0px 3px white;
+  color: white;
+}

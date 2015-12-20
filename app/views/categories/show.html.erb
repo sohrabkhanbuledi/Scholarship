@@ -1,0 +1,13 @@
+<h2><%= @category.name %></h2>
+<hr>
+<br>
+<% if @articles.each do |article| %>
+	<h3><%= link_to article.title, article %></h3>
+	<p><%= article.post %></p>  
+<% end.empty? %>
+
+<p>::<< <b>Sorry</b> >>:: There are no article in <b><%= @category.name %></b> category...!!!</p>
+
+<% end %>
+<br>
+<%= link_to "Back to Recent Articles", articles_path, class: 'link-to-btn' %>

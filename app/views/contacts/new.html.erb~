@@ -1,0 +1,10 @@
+<h2>Contact</h2>
+
+	<div id="contact">
+	<p>In this area you can contact us through below mentioned form. You can inform us for your valueable
+	feedback. We will intertain you in perior/real time/</p>
+
+<%= render 'form' %>
+
+
+

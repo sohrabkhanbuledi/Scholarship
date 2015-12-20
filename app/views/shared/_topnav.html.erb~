@@ -1,0 +1,23 @@
+<nav><!-- top nav -->
+		<div class="menu">
+			<ul>
+				<li><%= link_to "Home", root_url %></li>
+				<li><%= link_to "Scholarship", articles_path %></li>
+				<li><%= link_to "Category", categories_path %></li>
+				<li><%= link_to "About", about_path %></li>
+			 <li><%= link_to "Contact Us", new_contact_path %></li>
+				<li><%= link_to "FAQ's", faqs_path %></li>
+				
+		
+				<% if user_signed_in? %> 
+
+					<% else %>
+
+					<li style="padding-left: 100px;"><%= link_to "Sign Up", new_user_registration_path %></li>
+					<li><%= link_to "Login", new_user_session_path %></li>
+
+				<% end %>
+				
+			</ul>
+		</div>
+	</nav><!-- end of top nav -->

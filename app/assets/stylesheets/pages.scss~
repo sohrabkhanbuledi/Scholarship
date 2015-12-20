@@ -1,0 +1,169 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.myimg {
+	box-shadow: 0px 0px 2px gray;
+}
+
+.fb-btn {
+	border: 1px solid gray;
+	padding: 15px;
+	width: 150px;
+	text-align: center;
+	font-size: 18px;
+	margin-top:25px; float:left; margin-bottom: 25px; margin-right: 10px;
+	transition-duration: 0.4s;
+	transition-property: background-color, color;
+}
+
+.fb-btn:hover {
+	background-color: #0B2161;
+	border: 1px solid #0B2161;
+	color: white;
+}
+
+.fb-btn2 {
+	float: left;
+	padding: 5px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+	margin-top: -10px;
+	width: 180px;
+	text-align: left;
+	font-size: 14px;
+	transition-duration: 0.7s;
+	transition-property: background-color, color;
+}
+
+.fb-btn2:hover {
+	background-color: #0B2161;
+	color: white;
+}
+
+.tw-btn {
+	border: 1px solid gray;
+	padding: 15px;
+	width: 150px;
+	text-align: center;
+	font-size: 18px;
+	margin-top:25px; float:left; margin-bottom: 25px; margin-right: 10px;
+	transition-duration: 0.4s;
+	transition-property: background-color, color;
+}
+
+.tw-btn:hover {
+	background-color: #0088b3;
+	border: 1px solid #0088b3;
+	color: white;
+}
+.tw-btn2 {
+	float: left;
+	padding: 5px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+	width: 180px;
+	text-align: left;
+	font-size: 14px;
+	transition-duration: 0.4s;
+	transition-property: background-color, color;
+}
+
+.tw-btn2:hover {
+	background-color: #0088b3;
+	color: white;
+}
+
+.gp-btn {
+	border: 1px solid gray;
+	padding: 15px;
+	width: 150px;
+	font-size: 18px;
+	text-align: center;
+	margin-top:25px; float:left; margin-bottom: 25px;
+	transition-duration: 0.4s;
+	transition-property: background-color, color; 
+}
+
+.gp-btn:hover {
+	background-color: #CB0000;
+	border: 1px solid #CB0000;
+	color: white;
+}
+.gp-btn2 {
+	float: left;
+	margin-bottom: 20px;
+	padding: 5px;
+	padding-left: 10px;
+	width: 180px;
+	font-size: 14px;
+	text-align: left;
+	transition-duration: 0.4s;
+	transition-property: background-color, color; 
+}
+
+.gp-btn2:hover {
+	background-color: #CB0000;
+	color: white;
+}
+
+.logger {
+	height: 50px;
+}
+
+.login-sys {
+	border-bottom: 1px solid gray;
+	margin-right: 20px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.round-image-50 {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+
+.login-name {
+	width: auto;
+	height: auto;
+	position: relative;
+	margin-top: -46px;
+	margin-left: 55px;
+}
+
+.edit-profile {
+	position: relative;
+	margin-top: 20px;
+}
+
+.logout {
+	position: relative;
+}
+#home1{
+text-align: justify;
+margin-top: -25px;
+}
+
+#home2{
+text-align: justify;
+margin-top: -10px;
+}
+#about{
+text-align: justify;
+font-size: 18px;
+font-family: times new roman;
+}
+#contact{
+text-align: justify;
+font-size: 18px;
+font-family: times new roman;
+}

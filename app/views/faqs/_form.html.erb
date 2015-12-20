@@ -1,0 +1,29 @@
+<%= form_for(@faq) do |f| %>
+  <% if @faq.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@faq.errors.count, "error") %> prohibited this faq from being saved:</h2>
+
+      <ul>
+      <% @faq.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= f.text_field :title, :placeholder => "Write A Title", autofocus: true, class: "text-box" %>
+  </div>
+  <br>
+  <div>
+    <%= f.text_area :body, :placeholder => "Type FAQ's Text Here", class: "text-area" %>
+  </div>
+  <br>
+  <div>
+    <%= f.date_select :faq_update, class: "text-box" %>
+  </div>
+  <br>
+  <div>
+    <%= f.submit "Submit", class: "btn-submit" %>
+  </div>
+<% end %>
