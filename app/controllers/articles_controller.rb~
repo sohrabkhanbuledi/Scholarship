@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
-    before_action :authorize, except: [:show, :index]
+  before_filter :acts_as_admin!, only: [:new, :update, :edit, :destroy]
 
   # GET /articles
   # GET /articles.json
@@ -55,7 +55,7 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1
   # DELETE /articles/1.json
   def destroy
-    @articles = Article.destroy
+    @article.destroy
     respond_to do |format|
       format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
       format.json { head :no_content }
@@ -73,14 +73,12 @@ class ArticlesController < ApplicationController
       params.require(:article).permit(:title, :post, :postdate, :keyword, :category_id)
     end
 
-    def authorize
-      if current_user.nil?
-        redirect_to new_user_session_path, alert: "Not authorized..! Please log in."
-      else
-        if @article && @article.user != current_user
-          redirect_to root_path, alert: "Not authorized..! Only #{@article.user.username} has access to this post."
-        end
-      end
-    end
+	def acts_as_admin!
+		@user = current_user
+		unless current_user && User.find_by(email: "sohrab.uob@gmail.com") == current_user
+		flash[:alert] = 'Access denied..! Please login as admin.'
+		redirect_to @user
+		end
+	end
 
 end

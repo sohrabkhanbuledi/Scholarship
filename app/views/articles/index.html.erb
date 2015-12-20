@@ -17,6 +17,7 @@
     <% end %>
   </div>
 
-<% if current_user %> 
+<% if acts_as_admin %> 
+<% else%>
 <%= link_to 'New Scholarship', new_article_path, class: "link-to-btn" %>
 <% end %>
